@@ -1,40 +1,74 @@
-<div class="navbar-wrapper">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">INBOXIFY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PAGE 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PAGE 2</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            PAGE 3
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PAGE 4</a>
-                    </li>
-                </ul>
-                <div class="d-flex" id="google_login_btn">
-                    <button class="btn btn-primary login_btn">LOGIN</button>
-                    <button class="btn btn-danger signup_btn">SIGNUP</button>
+
+
+    <header class="header" id="site-header">
+        <a href="#" id="top-bar-js" class="top-bar-link">
+            <i class="seosight-icon seoicon-arrow-to-bottom"></i>
+        </a>
+
+        <div class="container">
+
+            <div class="header-content-wrapper">
+
+                <div class="logo">
+                    <a href="index.html" class="full-block-link"></a>
+                    <img loading="lazy" src="assets/img/logo-eye.png" alt="Seosight">
+                    <div class="logo-text">
+                        <div class="logo-title">INBOXIFY</div>
+                        <div class="logo-sub-title">Email Marketing</div>
+                    </div>
+                </div>
+
+                <nav id="primary-menu" class="primary-menu">
+
+                    <a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+                        <span class="mob-menu--title">Menu</span>
+                        <span id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden">
+                            <svg width="1000px" height="1000px">
+                                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                <path id="pathE" d="M 300 500 L 700 500"></path>
+                                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- menu-icon-wrapper -->
+
+                    <ul class="primary-menu-menu">
+                        <li class="">
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="#features">Features</a>
+                        </li>
+                        <li class="">
+                            <a href="#ask_query">Ask Query</a>
+                        </li>
+                        <li class="">
+                            <a href="#our_approch">Our Approch</a>
+                        </li>
+                        <li class="">
+                            <a href="#happy_clients">Happy Clients</a>
+                        </li>
+                        <li class="">
+                            <a href="#pricing">Pricing</a>
+                        </li>
+                        <li class="">
+                            <a href="#contact_us">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="user-menu open-overlay">
+                    <a href="#" class="user-menu-content  js-open-aside">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
                 </div>
             </div>
+
         </div>
-    </nav>
-</div>
+
+    </header>
+    <!-- ... End Header -->

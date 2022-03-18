@@ -1,0 +1,113 @@
+/*------------- #Window Popup --------------*/
+
+
+.window-popup {
+  opacity: 0;
+  background-color: #66b5ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  -webkit-transition: opacity .3s ease, -webkit-transform .3s ease, scale .4s ease;
+  transition: opacity .3s ease, -webkit-transform .3s ease, scale .4s ease;
+  -o-transition: opacity .3s ease, transform .3s ease, scale .4s ease;
+  transition: opacity .3s ease, transform .3s ease, -webkit-transform .3s ease, scale .4s ease;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  z-index: 50;
+
+  &.open {
+	opacity: 1;
+	z-index: 999999;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	overflow: auto;
+	background: rgba(37, 35, 35, 0.97);
+  }
+}
+
+.js-message-popup.cd-nav-trigger {
+  position: relative;
+  z-index: auto;
+}
+
+.sign-in-popup {
+  width: 560px;
+  max-width: calc(100% - 20px);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  margin: 30px auto;
+  background-color: $white-color;
+  border: 4px solid $primary-color;
+
+  .title {
+	margin-bottom: 20px;
+  }
+
+  .btn {
+	margin-top: 30px;
+  }
+}
+
+.popup-close {
+  border-radius: 100%;
+  background-color: #151414;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: sticky;
+  right: 0;
+  left: calc(100% - 50px);
+  z-index: 99999;
+  border: 2px solid $primary-color;
+  transition: all .3s ease;
+  display: block;
+
+  .seosight-icon {
+	font-size: 16px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $white-color;
+	transition: all .4s cubic-bezier(.55,0,.1,1);
+  }
+
+  &:hover {
+	background-color: $primary-color;
+  }
+
+  &.popup-close-round {
+	border-radius: 100%;
+	right: auto;
+	top: 0;
+	display: block;
+	margin: 50px auto;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, 0);
+  }
+}
+
+.body-overflow {
+  overflow: hidden;
+}
+
+/*================= Responsive Mode ============*/
+
+@media (max-width: 768px) {
+
+  .sign-in-popup {
+	padding: 20px;
+
+	.remember-wrap .checkbox label {
+	  font-size: 13px;
+	}
+  }
+}
